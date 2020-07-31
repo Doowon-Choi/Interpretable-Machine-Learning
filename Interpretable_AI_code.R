@@ -15,10 +15,8 @@ head(Boston)
 
 ## fit machine learning model using partykit ##
 
-#mob_mod <- mob(medv ~ lstat + rm | zn + indus + chas + nox + age + 
-#              dis + rad + tax + crim + ptratio,
-#            control = mob_control(minsplit = 40), data = Boston, 
-#            model = linearModel)
+## The following decision tree model is already interpretable mode, but here I treat it as a black box model
+## Later, SVM and RF model will be used as a black box model ##
 
 mob_mod <- lmtree(medv ~ lstat + rm | zn + indus + chas + nox + age + 
                  dis + rad + tax + crim + ptratio, data = Boston, 
@@ -178,9 +176,7 @@ tree$results
 plot(tree)
 
 ######## Local interpretable model-agnostic, LIME #########
-#### See the behavior of the particular single instance and personally, This is similar as to locally weighted regression framework####
-
-#### LIME python version
+#### See the behavior of the particular single instance. Personally, this is similar as a locally weighted regression framework####
 
 ### Note that we have focused on global interpretability  #####
 #The generalized algorithm LIME applies is: http://uc-r.github.io/lime
