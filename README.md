@@ -29,7 +29,7 @@ SVM
 ![Feature_interaction](https://user-images.githubusercontent.com/69023373/89114142-d122c880-d43e-11ea-8c09-75caa4201a1d.png)
 
 ### 7.Surrogate model
-Decision tree (CART)model is used as a surrogate model of a black box model SVM.     
+Decision tree model (CART) is used as a surrogate model of a black box model SVM.     
 ![Surrogate_tree](https://user-images.githubusercontent.com/69023373/89114158-f1eb1e00-d43e-11ea-84d5-6301de78fac7.png)
 
 ### 8. Local Interpretable Model-Agnostic Explanations (LIME)
