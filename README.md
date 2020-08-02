@@ -34,5 +34,6 @@ Decision tree model (CART) is used as a surrogate model of a black box model SVM
 
 ### 8. Local Interpretable Model-Agnostic Explanations (LIME)
 Unlike global model, several particular observations are approximated by interpretable models like linear regression, LASSO, Ridge regression etc.   
+Four instances of our interest is compared below under different values of bin.   
 ![Lime](https://user-images.githubusercontent.com/69023373/89114184-3d9dc780-d43f-11ea-82bb-7655d56279bc.png)
 
